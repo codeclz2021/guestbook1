@@ -4,7 +4,8 @@
 <%@ page import="com.javaex.vo.GuestbookVo" %>
 
 <%
-
+	request.setCharacterEncoding("UTF-8");
+	
 	int no = Integer.parseInt(request.getParameter("no"));
 	String password = request.getParameter("password");
 	
@@ -18,10 +19,10 @@
 	
 	
 	GuestbookDao guestbookDao = new GuestbookDao();
-	guestbookDao.delete(guestbookVo);
+	//guestbookDao.delete(guestbookVo);
 	
 	
-	response.sendRedirect("./addList.jsp");
+	//response.sendRedirect("./addList.jsp");
 
 	/*
 	GuestbookDao guestbookDao = new GuestbookDao();

@@ -13,7 +13,7 @@
 </head>
 <body>
 	
-	<form action="./delete.jsp" method="get">
+	<form action="./delete.jsp" method="post">
 		<table>
 			<tr>
 				<td>비밀번호</td>
